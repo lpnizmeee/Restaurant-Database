@@ -3,6 +3,14 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: transparent;
+  background-image: url(./assets/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: cover;
+  background-attachment: scroll;
+  background-origin: padding-box;
+  background-clip: border-box;
 }
 
 .logo {
@@ -48,4 +56,48 @@
 
 .read-the-docs {
   color: #888;
+}
+.animation {
+  border: 0px solid black;
+  border-radius: 0px;
+}
+.navbar_font {
+  font-family: Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  text-align: end;
+  color: #ffffff;
+}
+.logo_font {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+  color: #ffffff;
+  display: flex;
+  align-items: start;
+  justify-items: start;
+  margin-right: 55%;
+  justify-content: start;
+  text-align: start;
+}
+.navbar_layout {
+  display: flex;
+  justify-items: start;
+  margin: 0px 0px 5%;
+}
+.navbar_item {
+  display: flex;
+  align-items: center;
+  justify-items: end;
+  align-content: start;
+  padding: 1px;
+  margin: 0px 0px 0px 10%;
+  position: static;
+  overflow: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.intro {
+  text-align: start;
+  display: flex;
+  margin: 0% 70% 2% 0%;
 }
