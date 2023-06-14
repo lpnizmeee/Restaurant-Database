@@ -1,2 +1,58 @@
 .root {
 }
+.navbar_font {
+  font-family: Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: end;
+  color: #ffffff;
+}
+.logo_font {
+  font-family: 'Dancing Script', cursive;
+  font-weight: 600;
+  color: #ffffff;
+  display: flex;
+  align-items: start;
+  justify-items: start;
+  margin-right: 25%;
+  justify-content: start;
+  text-align: start;
+  font-size: 25px;
+  width: 50%;
+}
+.navbar_item_space {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 5%;
+  padding-left: 5px;
+}
+.navbar_item {
+  display: flex;
+  align-items: center;
+  justify-items: end;
+  align-content: start;
+  padding: 1px;
+  margin: 0px 0px 0px 0%;
+  position: static;
+  overflow: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 40%;
+  font-size: 30px;
+}
+.navbar_layout {
+  display: flex;
+  justify-items: start;
+  margin: 0px 0px 5%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+  padding: 20px 1px 10px 10px;
+}
+.logo_position {
+  left: 10px;
+  padding: 1px 0px 0px 60px;
+  margin-right: 28%;
+}

@@ -1,5 +1,5 @@
 .App {
-  max-width: 1280px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -11,6 +11,10 @@
   background-attachment: scroll;
   background-origin: padding-box;
   background-clip: border-box;
+  top: 0px;
+  position: fixed;
+  left: 0px;
+  right: 0px;
 }
 
 .logo {
@@ -64,7 +68,7 @@
 .navbar_font {
   font-family: Tahoma, sans-serif;
   font-weight: 500;
-  font-size: 12px;
+  font-size: 18px;
   text-align: end;
   color: #ffffff;
 }
@@ -75,9 +79,11 @@
   display: flex;
   align-items: start;
   justify-items: start;
-  margin-right: 55%;
+  margin-right: 25%;
   justify-content: start;
   text-align: start;
+  font-size: 18px;
+  width: 40%;
 }
 .navbar_layout {
   display: flex;
@@ -90,14 +96,27 @@
   justify-items: end;
   align-content: start;
   padding: 1px;
-  margin: 0px 0px 0px 10%;
+  margin: 0px 0px 0px 0%;
   position: static;
   overflow: auto;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 40%;
 }
 .intro {
-  text-align: start;
+  text-align: justify;
   display: flex;
-  margin: 0% 70% 2% 0%;
+  margin: 0% 65% 4% 0%;
+  font-size: 20px;
+}
+.navbar_item_space {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-right: 5%;
+  padding-left: 5px;
+}
+.caption {
+  font-size: 50px;
+  margin-top: 0px;
+  padding: 10% 0px 0px;
 }

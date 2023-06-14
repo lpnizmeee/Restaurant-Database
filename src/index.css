@@ -41,19 +41,24 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
-  border: 1px solid transparent;
+  border-radius: 45px;
+  border: 3px solid transparent;
+  background-image: none;
   padding: 0.6em 1.2em;
-  font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
+  background-color: #ffbe33;
   cursor: pointer;
   transition: border-color 0.25s;
   color: #ffffff;
+  display: flex;
+  margin: 0px 0px 5%;
+  font-size: 1.5em;
+
 }
 button:hover {
   border-color: #ffffff;
+  background-color: #ffcb4c;
 }
 button:focus,
 button:focus-visible {
@@ -62,7 +67,7 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    color: #213547;
+    color: #ffffff;
     background-color: #ffffff;
   }
   a:hover {
@@ -73,5 +78,7 @@ button:focus-visible {
     border-radius: 45px;
     background-image: none;
     display: flex;
+    margin: 0px 0px 5%;
+    font-size: 1.5em;
   }
 }

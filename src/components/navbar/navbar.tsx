@@ -1,5 +1,7 @@
 import classNames from 'classnames';
 import styles from './navbar.module.scss';
+import { Link } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 export interface NavbarProps {
     className?: string;
@@ -10,5 +12,37 @@ export interface NavbarProps {
  * To create custom component templates, see https://help.codux.com/kb/en/article/kb16522
  */
 export const Navbar = ({ className }: NavbarProps) => {
-    return <div className={classNames(styles.root, className)}>Navbar</div>;
+    return (
+        <nav className={styles.navbar_layout}>
+            <a href="/home" className={classNames(styles.logo_font, styles.logo_position)}>
+                DreamFlare
+            </a>
+            <div className={styles.navbar_item}>
+                <Link
+                    to="/home"
+                    className={classNames(styles.navbar_font, styles.navbar_item_space)}
+                >
+                    HOME
+                </Link>
+                <Link
+                    to="/menu"
+                    className={classNames(styles.navbar_font, styles.navbar_item_space)}
+                >
+                    MENU
+                </Link>
+                <Link
+                    to="/about"
+                    className={classNames(styles.navbar_font, styles.navbar_item_space)}
+                >
+                    ABOUT
+                </Link>
+                <Link
+                    to="/about"
+                    className={classNames(styles.navbar_font, styles.navbar_item_space)}
+                >
+                    BOOK TABLE
+                </Link>
+            </div>
+        </nav>
+    );
 };
