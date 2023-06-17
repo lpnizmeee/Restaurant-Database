@@ -9,10 +9,9 @@ export default function App() {
     const [count, setCount] = useState(0);
     return (
         <BrowserRouter>
+        <Navbar/>
         <Routes>
             <Route path="/" element={
-                <>
-                <Navbar/>
                 <div className={styles.App}>
                     <h2 className={Classnames(styles.logo_font, styles.caption)}>Fast Food Restaurant</h2>
                     <h3 className={Classnames(styles.navbar_font, styles.intro)}>
@@ -21,11 +20,9 @@ export default function App() {
                     </h3>
                     <button>Order Now</button>
                 </div>
-                </>} />    
+                } />    
             
             <Route path="home" element={
-                <>
-                <Navbar/>
                 <div className={styles.App}>
                     <h2 className={Classnames(styles.logo_font, styles.caption)}>Fast Food Restaurant</h2>
                     <h3 className={Classnames(styles.navbar_font, styles.intro)}>
@@ -34,7 +31,7 @@ export default function App() {
                     </h3>
                     <button>Order Now</button>
                 </div>
-                </>} />   
+                } />   
 
             <Route path="menu" element={<Menu/>} />
         </Routes>
