@@ -5,6 +5,7 @@ export default createBoard({
     name: 'Menu',
     Board: () => <Menu />,
     environmentProps: {
-        windowWidth: 1024,
+        windowWidth: 1920,
+        windowHeight: 1080,
     },
 });
