@@ -12,9 +12,10 @@
   background-origin: padding-box;
   background-clip: border-box;
   top: 0px;
-  position: fixed;
+  position: relative;
   left: 0px;
   right: 0px;
+  max-height: 100%;
 }
 
 .logo {
@@ -121,4 +122,8 @@
   padding: 10% 0px 0px;
 }
 
-
+.Component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

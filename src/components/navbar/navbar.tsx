@@ -19,7 +19,7 @@ export const Navbar = ({ className }: NavbarProps) => {
             </a>
             <div className={styles.navbar_item}>
                 <Link
-                    to="/home"
+                    to="/"
                     className={classNames(styles.navbar_font, styles.navbar_item_space)}
                 >
                     HOME
@@ -37,7 +37,7 @@ export const Navbar = ({ className }: NavbarProps) => {
                     ABOUT
                 </Link>
                 <Link
-                    to="/about"
+                    to="/booking"
                     className={classNames(styles.navbar_font, styles.navbar_item_space)}
                 >
                     BOOK TABLE
