@@ -3,255 +3,10 @@ $black: #000000;
 $primary1: #ffbe33;
 $primary2: #222831;
 $textCol: #1f1f1f;
+
 .root {
-  //background-color: #ffffff;
-  max-width: 100%;
-  max-height: 100%;
-  display: grid;
-  // top: 10%;
-  position: relative;
-  // align-self: center;top:2px;top:2px;top:2px;top:2px;flex-direction:row;flex-direction:column;flex-wrap:wrap;flex-wrap:nowrap;flex-wrap:wrap;flex-direction:column;flex-direction:row;flex-direction:column;flex-direction:column;flex-direction:column;flex-direction:column;flex-wrap:wrap;flex-wrap:wrap;top:5px;top:5px;top:5%;top:5%;top:5px;top:5px;top:5%;top:5%;top:5%;top:5%;top:10px;top:10px;padding:2px;padding:5px;padding:0%;padding-top:0%;padding:5px;padding-top:0%;grid-auto-flow:column;grid-auto-flow:row;padding:0%;padding-bottom:0%;
-}
-.ourMenu_font {
-  font-family: 'Dancing Script', cursive;
-  font-weight: 600;
-  font-size: 50px;
-  text-align: center;
-  align-items: center;
-  display: flex;
-  justify-items: center;
-  flex-direction: row-reverse;
-  justify-content: center;
-  align-content: center;
-  position: relative;
 }
 
-// BUTTONS
-.voltage_button {
-  position: relative;
-
-  button {
-    // color: white;
-    background: #020202;
-    padding: 1rem 3rem 1rem 3rem;
-    border-radius: 5rem;
-    border: 5px solid #ebb026;
-    font-size: 1.2rem;
-    line-height: 1em;
-    letter-spacing: 0.075em;
-    transition: background 0.3s;
-
-    &:hover {
-      cursor: pointer;
-      background: #020202;
-    }
-  }
-
-  button:hover + svg,
-  button:hover + svg + .dots {
-    opacity: 1;
-  }
-
-  svg {
-    display: block;
-    position: absolute;
-    top: -0.75em;
-    left: -0.25em;
-    width: calc(100% + 0.5em);
-    height: calc(100% + 1.5em);
-    pointer-events: none;
-    opacity: 0;
-    transition: opacity 0.4s;
-    transition-delay: 0.1s;
-
-    path {
-      stroke-dasharray: 100;
-      filter: url('#glow');
-    }
-  }
-
-  svg path.line_1 {
-    stroke: #f4902c;
-    stroke-dashoffset: 0;
-    animation: spark-1 3s linear infinite;
-  }
-
-  svg path.line_2 {
-    stroke: #f02812;
-    stroke-dashoffset: 500;
-    animation: spark-2 3s linear infinite;
-  }
-
-  .dots {
-    opacity: 0;
-    transition: opacity 0.3s;
-    transition-delay: 0.4s;
-
-    .dot {
-      width: 1rem;
-      height: 1rem;
-      background: white;
-      border-radius: 100%;
-      position: absolute;
-      opacity: 0;
-    }
-
-    .dot_1 {
-      top: 0;
-      left: 20%;
-      animation: fly-up 3s linear infinite;
-    }
-
-    .dot_2 {
-      top: 0;
-      left: 55%;
-      animation: fly-up 3s linear infinite;
-      animation-delay: 0.5s;
-    }
-
-    .dot_3 {
-      top: 0;
-      left: 80%;
-      animation: fly-up 3s linear infinite;
-      animation-delay: 1s;
-    }
-
-    .dot_4 {
-      bottom: 0;
-      left: 30%;
-      animation: fly-down 3s linear infinite;
-      animation-delay: 2.5s;
-    }
-
-    .dot_5 {
-      bottom: 0;
-      left: 65%;
-      animation: fly-down 3s linear infinite;
-      animation-delay: 1.5s;
-    }
-  }
-}
-
-@keyframes spark-1 {
-  to {
-    stroke-dashoffset: -1000;
-  }
-}
-
-@keyframes spark-2 {
-  to {
-    stroke-dashoffset: -500;
-  }
-}
-
-@keyframes fly-up {
-  0% {
-    opacity: 0;
-    transform: translateY(0) scale(0.2);
-  }
-
-  5% {
-    opacity: 1;
-    transform: translateY(-1.5rem) scale(0.4);
-  }
-
-  10% {
-    opacity: 0;
-    transform: translateY(-3rem) scale(0.2);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateY(-3rem) scale(0.2);
-  }
-}
-
-@keyframes fly-down {
-  0% {
-    opacity: 0;
-    transform: translateY(0) scale(0.2);
-  }
-
-  5% {
-    opacity: 1;
-    transform: translateY(1.5rem) scale(0.4);
-  }
-
-  10% {
-    opacity: 0;
-    transform: translateY(3rem) scale(0.2);
-  }
-
-  100% {
-    opacity: 0;
-    transform: translateY(3rem) scale(0.2);
-  }
-}
-.list_menu {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  align-items: center;
-  justify-items: center;
-  justify-content: space-around;
-  position: relative;
-  bottom: auto;
-  align-self: center;
-  left: 0px;
-  right: 0px;
-  row-gap: 0px;
-  column-gap: 10px;
-}
-.menu_div {
-  display: grid;
-  grid-template-columns: 1fr;
-  position: relative;
-  padding: 5% 0%;
-}
-.menu_item {
-  display: flex;
-  grid-auto-flow: column;
-  position: relative;
-  top: auto;
-  gap: 0.5%;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding-left: 2%;
-  padding-right: 2%;
-}
-.box {
-  position: relative;
-  margin-top: 25px;
-  background-color: $white;
-  border-radius: 10px;
-  color: $white;
-  border-radius: 15px;
-  overflow: hidden;
-  background: linear-gradient(to bottom, #f1f2f3 25px, $primary2 25px);
-
-  .img_box {
-    background: #f1f2f3;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 215px;
-    border-radius: 0 0 0 45px;
-    margin: -1px;
-    padding: 25px;
-
-    img {
-      max-width: 100%;
-      max-height: 145px;
-      transition: all 0.2s;
-    }
-  }
-}
-.all {
-  display: flex;
-  position: relative;
-  margin: 0px;
-}
 .col-sm-6 {
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
@@ -1085,6 +840,11 @@ a:focus {
 .client_section .heading_container {
   margin-bottom: 30px;
 }
+.heading_container {
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 6vh 0;
+}
 
 .client_section .box {
   display: -webkit-box;
@@ -1393,4 +1153,44 @@ a:focus {
 }
 .menu_padding_bottom {
   padding: 0% 0% 10%;
+}
+.forms_control {
+  position: relative;
+  min-height: 5vh;
+  min-width: 45vw;
+  margin: 0px;
+  padding: 0px 0px 0px 4%;
+}
+.forms_control::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  opacity: 1; /* Firefox */
+  color: #222222;
+  font-family: Tahoma, sans-serif;
+}
+
+.forms_control:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #222222;
+  font-family: Tahoma, sans-serif;
+}
+
+.forms_control::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #222222;
+  font-family: Tahoma, sans-serif;
+}
+.div_1 {
+  display: flex;
+  position: relative;
+  padding-bottom: 3%;
+}
+.select_custom {
+  min-width: 47vw;
+}
+.bookNow_button {
+  position: relative;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  justify-content: center;
+  align-items: center;
 }

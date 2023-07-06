@@ -1,0 +1,13 @@
+.all {
+  display: flex;
+  position: relative;
+  margin: 0px;
+}
+.col-sm-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.food_item_flexbox {
+  padding: 5%;
+}

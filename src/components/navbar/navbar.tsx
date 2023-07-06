@@ -14,14 +14,11 @@ export interface NavbarProps {
 export const Navbar = ({ className }: NavbarProps) => {
     return (
         <nav className={styles.navbar_layout}>
-            <a href="/home" className={classNames(styles.logo_font, styles.logo_position)}>
+            <a href="/" className={classNames(styles.logo_font, styles.logo_position)}>
                 DreamFlare
             </a>
             <div className={styles.navbar_item}>
-                <Link
-                    to="/"
-                    className={classNames(styles.navbar_font, styles.navbar_item_space)}
-                >
+                <Link to="/" className={classNames(styles.navbar_font, styles.navbar_item_space)}>
                     HOME
                 </Link>
                 <Link
